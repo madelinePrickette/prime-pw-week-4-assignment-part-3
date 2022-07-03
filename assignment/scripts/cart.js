@@ -28,3 +28,19 @@ function empty(array) {
     console.log(array)
 }
 empty(basket);
+
+console.log(`My current basket contains ${basket}`);
+console.log('I am now adding grapes', addItem('grapes'));
+console.log(`Now my basket is: ${basket}`);
+
+const maxItems = 5;
+
+function isFull(array) {
+    if (array.length < maxItems) {
+        return false
+    } else {
+        return true
+    }
+}
+
+console.log('Is my basket full?', isFull(basket));
